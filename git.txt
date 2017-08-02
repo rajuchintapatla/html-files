@@ -1,0 +1,41 @@
+>git
+
+
+>git config --global user.email "raju.chintapatla1796@gmail.com"
+
+>git config --global user.name "rajuchintapatla"
+
+>git config user.name
+>git config user.email
+
+>dir to see the files
+
+>cd Desktop
+>cd html-files
+
+
+C:\Users\rajuc\Desktop\html-files> git init
+
+>git add .
+
+>git commit -m "nav-bar.html"
+
+>git remote add origin http://github.com/rajuchintapatla/html-files.git
+
+
+>git push origin master
+
+
+>git add.
+
+>git commit -m "added java file"
+>git commit -m "removed java file"
+
+
+
+
+
+
+
+
+
