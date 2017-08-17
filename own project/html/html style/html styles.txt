@@ -1,0 +1,38 @@
+
+The HTML Style Attribute
+Setting the style of an HTML element, can be done with the style attribute.
+
+The HTML style attribute has the following syntax:
+
+<tagname style="property:value;">
+The property is a CSS property. The value is a CSS value.
+
+
+
+
+>>>>>>HTML Styles
+? PreviousNext ?
+Example
+I am Red
+
+I am Blue
+
+I am Big
+
+
+
+example:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>I am normal</p>
+<p style="color:red;">I am red</p>
+<p style="color:blue;">I am blue</p>
+<p style="font-size:36px;">I am big</p>
+
+</body>
+</html>
+
+

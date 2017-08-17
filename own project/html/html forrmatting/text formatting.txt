@@ -1,0 +1,111 @@
+>>>>(HTML <i> and <em> Elements
+The HTML <i> element defines italic text, without any extra importance.
+
+Syntax:
+<i>This text is italic</i>
+
+
+example:
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This text is normal.</p>
+
+<p><i>This text is italic.</i></p>
+
+</body>
+</html>
+
+
+
+
+The HTML <em> element defines emphasized text, with added semantic importance.)
+
+Syntax:
+<em>This text is emphasized</em>
+
+example:
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This text is normal.</p>
+
+<p><em>This text is emphasized.</em></p>
+
+</body>
+</html>
+
+Note: Browsers display <strong> as <b>, and <em> as <i>. However, there is a difference in the meaning of these tags: <b> and <i> defines bold and italic text, but <strong> and <em> means that the text is "important".
+>>>>>
+
+
+
+
+HTML <small> Element
+The HTML <small> element defines smaller text:
+
+synatx:
+<h2>HTML <small>Small</small> Formatting</h2>
+
+
+
+example:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML <small>Small</small> Formatting</h2>
+
+</body>
+</html>
+
+
+HTML <mark> Element
+The HTML <mark> element defines marked or highlighted text:
+
+Example
+<h2>HTML <mark>Marked</mark> Formatting</h2>
+
+HTML <del> Element
+The HTML <del> element defines deleted (removed) text.
+
+Example:
+
+<p>My favorite color is <del>blue</del> red.</p>
+
+HTML <ins> Element
+The HTML <ins> element defines inserted (added) text.
+
+Example:
+<p>My favorite <ins>color</ins> is red.</p>
+
+HTML <sub> Element
+The HTML <sub> element defines subscripted text.
+
+Example
+<p>This is <sub>subscripted</sub> text.</p>
+
+HTML <sup> Element
+The HTML <sup> element defines superscripted text.
+
+Example
+<p>This is <sup>superscripted</sup> text.</p>
+
+
+
+
+
+HTML Text Formatting Elements
+Tag	Description
+<b>	Defines bold text
+<em>	Defines emphasized text 
+<i>	Defines italic text
+<small>	Defines smaller text
+<strong>	Defines important text
+<sub>	Defines subscripted text
+<sup>	Defines superscripted text
+<ins>	Defines inserted text
+<del>	Defines deleted text
+<mark>	Defines marked/highlighted text

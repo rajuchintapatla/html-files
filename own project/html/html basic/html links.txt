@@ -1,0 +1,8 @@
+HTML Links
+HTML links are defined with the <a> tag:
+
+syntax:
+<a href="https://www.w3schools.com">This is a link</a>
+The link's destination is specified in the href attribute. 
+
+Attributes are used to provide additional information about HTML elements.
