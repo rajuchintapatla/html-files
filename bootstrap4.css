@@ -1,0 +1,102 @@
+
+html, body {
+  height: 100%;
+  background: burlywood;
+  margin:0;
+  padding:0;
+} 
+
+
+
+
+.slide {
+  display: inline-block;
+  vertical-align: top; 
+  border: 1px solid #ccc;
+  white-space:initial;  
+  border-radius:5px;
+  background-color:#eaeaea;
+  width:250px;
+  background-color: #fafafa;
+  box-shadow: 1px 0px 10px #999;
+  padding: 4px; 
+  margin:5px;
+  padding-right: 0; 
+  white-space: initial; 
+}
+.slide h2{
+   margin:0;
+   padding:0;
+}
+.slide .title {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.items {
+  max-height: 88vh;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+}
+.items .item {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 3px;
+}
+.items .item:last-child {
+  margin-bottom: 0;
+}
+.items .item .title {
+  color: #333;
+  font-size: 1.3rem;
+}
+.items .item .description {
+  color: #333;
+}
+ 
+ 
+.items::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+  background-color:#fafafa;
+} 
+.items::-webkit-scrollbar-thumb {
+  background: #999;
+  -webkit-border-radius: 6px;
+} 
+.items::-webkit-scrollbar-track { 
+  background-color:#fafafa;
+  -webkit-border-radius: 6px;
+}
+.items::-webkit-scrollbar-button {
+  -webkit-border-radius: 6px;
+  background: #fafafa;
+  display: block; 
+  height:100%;
+} 
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 7px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button1 {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
