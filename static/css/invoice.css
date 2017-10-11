@@ -1,0 +1,32 @@
+.table-editable {
+	position: relative;
+}
+.table-editable  {
+	font-size: 12px;
+}
+ b {
+ 	font-size: 13px;
+ }
+input {
+	border-style: groove;
+}
+
+button {
+	color: blue;
+
+}
+
+.div{
+	
+	 background-color:  #f1f1f1;
+	  margin-top: 20px;
+}
+.div2{
+	padding-right: 50px; 
+	width: 1150px;
+	height: 200px;
+}
+.div3{
+	padding-left: 70px;
+	 margin-top: 25px;
+}
