@@ -1,0 +1,21 @@
+.date-custom{
+    border-radius: .25rem;
+    padding: 0px;
+     border-top-style: hidden;
+      border-left-style: hidden;
+      border: 1px solid rgba(0,0,0,.15);
+       border-left-style:hidden;
+       border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+}
+.icon-custom{
+    padding-right: 15px;
+}
+.border-custom{
+    border:0px;
+}
+#todo {
+    margin: 0 auto;
+    width: 100%;
+     
+}
