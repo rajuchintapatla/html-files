@@ -1,0 +1,132 @@
+HTML Attributes
+All HTML elements can have attributes
+Attributes provide additional information about an element
+Attributes are always specified in the start tag
+Attributes usually come in name/value pairs like: name="value"
+>>>>(The lang Attribute)
+The language of the document can be declared in the <html> tag.
+
+The language is declared with the lang attribute.
+
+Declaring a language is important for accessibility applications (screen readers) and search engines:
+
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+
+...
+
+</body>
+</html>
+The first two letters specify the language (en). If there is a dialect, use two more letters (US).<<<
+
+
+
+>>>>The title Attribute
+Here, a title attribute is added to the <p> element. The value of the title attribute will be displayed as a tooltip when you mouse over the paragraph:
+
+Example
+<p title="I'm a tooltip">
+This is a paragraph.
+</p>                <<<<<<<
+
+
+
+>>>>>The href Attribute
+HTML links are defined with the <a> tag. The link address is specified in the href attribute:
+
+Example
+<a href="https://www.w3schools.com">This is a link</a>
+<<<<<<<<
+
+
+
+>>>>>>Size Attributes
+HTML images are defined with the <img> tag.
+
+The filename of the source (src), and the size of the image (width and height) are all provided as attributes:
+
+Example
+<img src="w3schools.jpg" width="104" height="142">
+<<<<<<<
+
+
+>>>>>>The alt Attribute
+The alt attribute specifies an alternative text to be used, when an image cannot be displayed.
+
+The value of the attribute can be read by screen readers. This way, someone "listening" to the webpage, e.g. a blind person, can "hear" the element.
+
+Example
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+<<<<<<<
+
+
+
+>>>>>Single or Double Quotes?
+Double quotes around attribute values are the most common in HTML, but single quotes can also be used.
+
+In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:
+
+<p title='John "ShotGun" Nelson'>
+Or vice versa:
+
+<p title="John 'ShotGun' Nelson">
+<<<<<<<
+
+
+
+
+>>>>>Summary
+All HTML elements can have attributes
+The title attribute provides additional "tool-tip" information
+The href attribute provides address information for links
+The width and height attributes provide size information for images
+The alt attribute provides text for screen readers
+At W3Schools we always use lowercase attribute names
+At W3Schools we always quote attribute values with double quotes
+<<<<<<<<<
+
+
+
+
+>>>>>>
+HTML Attributes
+Below is an alphabetical list of some attributes often used in HTML:
+
+Attribute	Description
+(alt):	Specifies an alternative text for an image, when the image cannot be displayed.
+(disabled):	Specifies that an input element should be disabled
+(href):	Specifies the URL (web address) for a link
+(id):	Specifies a unique id for an element
+(src):	Specifies the URL (web address) for an image
+(style):Specifies an inline CSS style for an element
+(title):Specifies extra information about an element (displayed as a tool tip)
+<<<<<<<
+
+
+>>>>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+.table-editable {
+	position: relative;
+}
+.table-editable  {
+	font-size: 12px;
+
+}
+
+b {
+	font-size: 13px;
+}
+input {
+	border-style: groove;
+}
+
+button {
+	color: blue;
+}
+.div1{
+	height: 855px;
+	width: 1200px;
+	background-color: #f1f1f1;
+	margin-top: 20px;
+
+}
+.div2{
+	padding-right: 50px;
+	width: 1150px;
+	height: 120px;
+}
+nav {
+	background-color:  #f1f1f1;
+	margin-bottom: 20px;
+}
+.f{
+	font-size: 30px;
+}
+.b{
+	margin-right: 20px;
+}
