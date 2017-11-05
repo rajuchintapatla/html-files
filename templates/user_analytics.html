@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block ext_styles %}
+<style type="text/css">
+	.axis {
+	  font: 10px sans-serif;
+	}
+
+	.axis path,
+	.axis line {
+	  fill: none;
+	  stroke: #000;
+	  shape-rendering: crispEdges;
+	}
+</style>
+{% endblock ext_styles %}
+
+{% block content %}
+<section>
+	<div class="container">
+		<div class="col-sm-6">
+			<h3><strong>Total No.of Students:</strong> {{users_count}}</h3>
+		</div>
+		<div class="col-sm-6">
+			<h3><strong>New Signups (Today):</strong> {{new_users_count}}</h3>
+			<ul>
+				{% for users in new_users %}
+				<li>{{users.username}}</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		<h2 class="page-header">Get Dates:</h2>
+
+		<form id="analytics-form" method="POST">
+		{% csrf_token %}
+		  <div class="form-group">
+		  	<label>Start Date:</label>
+		  	<input type="date" name="start_date" >
+		  </div>
+
+		  <div class="form-group">
+		  	<label>End Date:</label>
+		  	<input type="date" name="end_date" >
+		  </div>
+
+		  <input type="submit" value="Submit" >
+		</form>
+	</div>
+	<div class="container">
+		<table id="usersData">
+			
+		</table>
+	</div>
+</section>
+{% endblock content %}
+
+{% block ext_scripts %}
+<script type="text/javascript">
+
+var new_users = [];
+var returning_users = [];
+
+$("#analytics-form").submit(function(e) {
+    e.preventDefault();
+    var url = "/user-analytics/"; 
+    $.ajax({
+       type: "POST",
+       url: url,
+       data: $("#analytics-form").serialize(),
+       success: function(data)
+       {
+           console.log(data.new_users); 
+           new_users = data.new_users;
+           returning_users = data.new_users;
+
+           $.each(JSON.parse(data.new_users), function (index, user) {
+           		console.log(user);
+                $('#usersData').append('<tr><td>' + user.fields.username + ' </td><td> ' + user.fields.date_joined + '</td></tr>');
+           })
+       	}
+    });
+
+});
+</script>
+{% endblock ext_scripts %}
+
+{% block footer %}
+{% endblock footer %}

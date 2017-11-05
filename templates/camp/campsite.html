@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block ext_styles %}
+<style type="text/css">
+.navbar{
+	margin-bottom: 0px;
+}
+.topic-item{
+	margin-left: 25px;
+}
+</style>
+{% endblock ext_styles %}
+
+{% block content %}
+<section style="background: linear-gradient(to right, {{course.start_color}}, {{course.end_color}}); padding: 20px 0px;">
+	<div class="container" style="color: #fff;">
+		<h1>{{course.name}}</h1>
+		<p>{{course.description}}</p>
+		<form method="POST" action="/user/courses/enroll/">{% csrf_token %}
+			{% if enrolled %}
+				<a href="{% url 'camp:playground' course.slug course.topics.all.0.slug %}" style="color:#fff;"><i class="fa fa-3x fa-play-circle" aria-hidden="true"></i></a>
+			{% else %}
+				<input type="hidden" name="course_id" value="{{ course.id }}">
+				<input class="btn btn-rounded-default" type="submit" value="Enroll">
+			{% endif %}		
+		</form>
+	</div>
+	
+</section>
+<section style="min-height: 500px;">
+	<div class="container">
+		<h3>About this course</h3>
+		<p>{{course.about}}</p>
+	</div>
+	<div class="container">
+		<h3>Course Walkthrough</h3>
+		<ul class="timeline">
+		{% for topic in course.topics.all %}
+			<li class="timeline-item">
+				<div class="timeline-simple-inner">
+					<h3 class="topic-title">{{topic.name}}</h3>
+					<p class="topic-description">{{topic.description}}</p>
+					<a role="button" class="btn btn-primary" href="/courses/{{course.slug}}/{{topic.slug}}/">Start</a>
+					<div class="timeline-icon">
+						<i class="fa fa-file-text-o fa-course-icon" aria-hidden="true"></i>
+					</div>
+				</div>
+			</li>	
+		{% endfor %}
+		</ul>
+	</div>
+</section>
+{% endblock content %}

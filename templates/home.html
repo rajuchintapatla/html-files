@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block ext_styles %}
+{% endblock ext_styles %}
+
+{% block content %}
+<section style="min-height: 80vh;">
+	{% if latest_course %}
+	<div class="container">
+		<h3 class="page-header">Latest Activity</h3>
+		<div class="container-fluid block-card" style="background: {{latest_course.start_color}};">
+			<div class="col-xs-9">
+				<h3 class="block-card-title">{{ latest_course.name }}</h3>
+				<p class="white-text">{{ latest_course.description }}</p>
+				<p class="white-text">You are doing awesome !</p>
+				<a role="button" class="btn btn-rounded-default" href="{% url 'camp:course_detail' latest_course.slug %}">Continue Course</a>
+			</div>
+			<div class="col-xs-3"></div>
+		</div>
+	</div>
+	{% elif not latest_course and not enrolled_courses %}
+	<div class="container">
+		<div class="table-container" style="height: 400px;">
+			<div class="vertical-container">
+				<img class="img-circle center-block" src="https://cdn.discordapp.com/attachments/305420074263773185/348147259243888640/empty-box-open.png" width="200" height="200">
+				<h3 class="text-center">You haven't enrolled to any course. Check courses page.</h3>
+				<p class="text-center">
+				<a role="button" class="btn btn-rounded-primary" href="{% url 'camp:course_list' %}">Take me to Courses</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	{% endif %}
+	<div class="container" style="padding-bottom: 40px;">
+		{% if enrolled_courses %}
+		<h3 class="page-header">Courses in Progress</h3>
+		<div class="container-fluid">
+			{% for course in enrolled_courses %}
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="card-container-2">
+					<img class="card-2-image center-block" src="{{course.course.cover_picture}}">
+					<h3 class="text-center">{{course.course.name}}</h3>
+					<p class="text-center">
+						<a href="{% url 'camp:course_detail' course.course.slug %}"><button class="btn btn-rounded-primary">Continue Course</button></a>
+					</p>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		{% endif %}
+	</div>
+</section>
+
+{% endblock content %}
+
+

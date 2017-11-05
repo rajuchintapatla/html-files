@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block ext_styles %}
+<style type="text/css">
+.navbar-transparent{
+  margin-bottom: 0px;
+}
+</style>
+{% endblock ext_styles %}
+
+{% block content %}
+
+<section style="min-height: 100vh;">
+  <div class="container">
+    <h3 class="page-header" style="margin-left: 10px;">Trending Courses</h3>
+    {% for course in courses %}
+      <div class="col-md-4 col-sm-6 col-xs-12 course-card-outer">
+        <a role="button" href="/courses/{{course.slug}}/">
+          <div class="course-card" style="background: {{course.start_color}};">
+            <span class="course-card-title">{{course.name}}</span>
+          </div>
+         </a>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="container">
+    <h3 class="page-header" style="margin-left: 10px;">Courses Coming Soon</h3>
+    <div class="col-md-4 col-sm-6 col-xs-12 course-card-outer">
+        <div class="course-card-disable" style="background: {{course.start_color}}">
+          <span class="course-card-title">Machine Learning</span>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12 course-card-outer">
+        <div class="course-card-disable" style="background: {{course.start_color}}">
+          <span class="course-card-title">Data Science</span>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12 course-card-outer">
+        <div class="course-card-disable" style="background: {{course.start_color}}">
+          <span class="course-card-title">Android Application Development</span>
+        </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}
+
+ 

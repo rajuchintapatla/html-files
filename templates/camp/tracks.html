@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block content %}
+
+<section style="min-height: 100vh;">
+  <div class="container">
+    <h2 class="text-center">List of Tracks</h2>
+    <ul class="flex-container">
+    {% for track in tracks %}
+      <a role="button" href="/track/{{track.id}}">
+        <li class="track-container">
+          <div class="track-bar" style="background-color: {{track.courses.all.0.start_color}}"></div>
+          <div class="track-card">
+            <div class="vertical-container">
+              <span class="track-card-title">{{track.name}}</span>
+              <span class="track-card-description">{{track.description}}</span>
+              <span class="track-card-footer"><strong>No.of Course: </strong>{{track.courses.all|length}}</span>
+            </div>
+          </div>
+       </li>
+      </a>
+    {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endblock content %}
+

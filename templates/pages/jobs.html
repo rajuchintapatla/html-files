@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+<title>{% block title %}Hoppercamp | Jobs{% endblock title %}</title>
+{% block ext_styles %}
+<style type="text/css">
+  .hero-unit{
+    height:20vh;
+    min-height: 300px;
+    background: #56CCF2;
+    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
+    background: linear-gradient(to right, #2F80ED, #56CCF2);
+  }
+
+  .position-h6{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 8px;
+    margin-bottom: 7px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .box-positions{
+    border: 1px solid #EEE;
+    border-radius: 2px; 
+    padding: 0px 20px;
+  }
+  .box-positions:hover{
+    background-color:#358CEE; 
+    padding: 0px 20px;
+    color: #FFF;
+  }
+</style>
+{% endblock ext_styles %}
+{% block content %}
+
+<section>
+  <div class="hero-unit">
+    <div class="vertical-container">
+      <h1 class="hero-unit-primary-text" style="">Jobs</h1> 
+    </div>
+  </div>
+</div>
+</section>
+
+<section style="padding: 100px 0px">
+  <div class="container">
+    <h1 class="section-title text-center">WE'RE HIRING</h1>
+    <hr class="h2-underline">
+    <p class="about-text text-center" style="padding-bottom: 100px; font-size: 20px; font-weight: 300;">We are looking for motivated and committed individuals who can contribute to the work that we do. Every part of the job at Hoppercamp will be an opportunity to learn from different experiences and new people - which is the essence of the start-up experience.</p>
+    <h1 class="section-title text-center">OPEN POSITIONS</h1>
+    <hr class="h2-underline">
+    <div class="row" style="text-align:left;padding-top: 20px;">
+      <div class="col-sm-4">
+       <a href="mailto:careers@hoppercamp.com?Subject=Applying%20for%20position">
+        <div class="box-positions">
+         <h6 class="position-h6">Software Engineer</h6>
+         <p>Hyderabad</p>
+       </div>
+     </a>
+   </div>
+   <div class="col-sm-4">
+    <a href="mailto:careers@hoppercamp.com?Subject=Applying%20for%20position">
+      <div class="box-positions">
+        <h6 class="position-h6">Compiler Engineer</h6>
+        <p>Hyderabad</p>
+      </div>
+    </a>
+  </div>
+  <div class="col-sm-4">
+   <a href="mailto:careers@hoppercamp.com?Subject=Applying%20for%20position">
+    <div class="box-positions">
+      <h6 class="position-h6">Product Design</h6>
+      <p>Hyderabad</p>
+    </div>
+  </a>
+</div>
+</div>
+</div>
+</section>
+
+<section style="padding: 0px 0px 30px 0px">
+  <div class="container text-center">
+    <h3 class="lead">Mail us at <a>careers@hoppercamp.com</a></h3>
+  </div>
+  
+</section>
+
+{% endblock content %}
+
+{% block footer %}
+{% include 'footer.html' %}
+{% endblock footer %}
+
+

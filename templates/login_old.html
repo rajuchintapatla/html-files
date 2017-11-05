@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block ext_styles %}
+<style type="text/css">
+.navbar{
+	margin-bottom: 0px;
+}
+.block-container{
+	background: #fff;
+	padding: 20px 10px 40px 10px;
+	margin-top: 22%;
+	border-radius: 2px;
+	box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.2), 0px 2px 7px 0px rgba(0,0,0,0.2);
+}
+.in-btns{
+	padding: 0px 40px;
+}
+.custom_btn-facebook {background: #3b5998;border-radius: 0px; color: #fff;}
+.custom_btn-twitter {background: #00aced;border-radius: 0px; color: #fff;}
+.custom_btn-google {background: #c32f10;border-radius: 0px; color: #fff;}
+	
+.social-btns{
+	border-radius: 2px;
+	margin-bottom: 10px;
+}
+.social-btns:hover, .social-btns:focus, .social-btns:active{
+	color: #fff;
+}	
+</style>
+{% endblock ext_styles %}
+
+{% block content %}
+
+<section style="background: url('https://cdn.discordapp.com/attachments/253881300665106434/309225077314945034/landscape-2132.jpg')no-repeat center center; background-size: cover; height: 100vh;">
+	<div class="container">
+		<div class="col-sm-offset-3 col-sm-6">
+			<div class="block-container">
+				<h1 class="text-center">LOGIN</h1>
+				<p class="text-center">with your social network</p>
+				<div class="in-btns">
+					<a href="#" class="btn btn-lg btn-block custom_btn-facebook social-btns">
+						<i class="fa fa-facebook"></i>
+						<span class="" style="margin-left: 10px;">Continue with Facebook</span>
+					</a>
+
+					<a href="#" class="btn btn-lg btn-block custom_btn-twitter social-btns">
+						<i class="fa fa-twitter"></i>
+						<span class="" style="margin-left: 4px;">Continue with Twitter</span>
+					</a>
+					<a href="#" class="btn btn-lg btn-block custom_btn-google social-btns">
+						<i class="fa fa-google"></i>
+						<span class="" style="margin-left: 4px;">Continue with Google+</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock content %}
+

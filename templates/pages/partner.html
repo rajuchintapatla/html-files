@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+<title>{% block title %}Hoppercamp | Partner{% endblock title %}</title>
+{% block ext_styles %}
+<style type="text/css">
+	.hero-unit{
+		position: relative;
+		height:20vh;
+		min-height: 300px;
+		background:url('https://cdn.discordapp.com/attachments/305420074263773185/318103386564198402/institution.png') center center;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		overflow: hidden;
+		object-position: center;
+	}
+	.form-control{
+		min-height: 42px;
+		font-size: 14px;
+		line-height: 20px;
+		padding: 0 15px;
+		border: 2px solid #C9C9C9;
+		box-shadow: none !important;
+	}
+	.form-control:focus {
+		border-color: #2A87E5;
+	}
+	.ghost-button{
+		background-color: #358CEE;
+	}
+	.btn-default:hover {
+		color: #333;
+		background-color: #FFF;
+		border-color: #358CEE;
+	}
+
+</style>
+{% endblock ext_styles%}
+
+{% block content %}
+<section>
+	<div class="hero-unit">
+		<div class="vertical-container">
+			<h1 class="hero-unit-primary-text" style=""></h1> 
+		</div>
+	</div>
+</div>
+</section>
+
+<section style="padding: 60px 0px">
+<div class="container">
+	<h2 class="text-center">WHAT WE OFFER</h2>
+	<hr class="h2-underline">
+	<p class="feature-description text-center">Hoppercamp offers a variety of plans for schools and other institutions that want to avail our services. We have tracks and courses that are designed keeping in mind the needs of students from grade IV upward. <br><br>
+
+		We believe that programming is for everyone - irrespective of age. Learning Computer Science and how to code can provide young students with skills that will prove necessary at higher stages in their education and life. Given the fast pace of the global shift towards technology, it is never too early to take your first step into the world of computers and software. Programming can enhance critical thinking, logical reasoning, problem solving, and decision making capabilities in students. <br><br>
+
+		Our tracks for students at Hoppercamp will use personalized learning methods that will complement the traditional methods used in teaching Computer Science and programming in schools. The best tool to enhance learning inside the classroom, is learning outside the classroom.</p>
+		</div>
+	</section>
+
+<section style="padding: 60px 0px;">
+	<h2 class="text-center"> PARTNER WITH US </h2>
+	<hr class="h2-underline">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-8">
+				<form>
+					<div class="form-group">
+						<label>Name Of Institution</label>
+						<input class="form-control" placeholder="">
+					</div>
+					<div class="form-group">
+						<label>Type</label>
+						<input class="form-control" placeholder="School/College/Organization">
+					</div>
+					<div class="form-group">
+						<label>Phone Number</label>
+						<input class="form-control" placeholder="">
+					</div>
+					<div class="form-group">
+						<label>Email</label>
+						<input class="form-control" placeholder="">
+					</div>
+					<div class="form-group">
+						<label>City</label>
+						<input class="form-control" placeholder="">
+					</div>
+					<div class="form-group">
+						<label>Country</label>
+						<input class="form-control" placeholder="">
+					</div>
+					<div class="text-center">
+						<button  type="submit" class="btn btn-default ghost-button">Partner with us !</button>
+					</div>
+				</form>
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+	</div>
+</section>
+
+{% endblock content %}
+
+{% block footer %}
+{% include 'footer.html' %}
+{% endblock footer %}
+

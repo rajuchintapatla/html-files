@@ -1,0 +1,566 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+<title>{% block title %}Hoppercamp | FAQ'S{% endblock title %}</title>
+{% block ext_styles %}
+<style type="text/css">
+	.hero-unit{
+		height:20vh;
+		min-height: 300px;
+		background: #56CCF2;
+		background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
+		background: linear-gradient(to right, #2F80ED, #56CCF2);
+	}
+	p {
+		font-weight: 200;
+		font-size: 18px;
+	}
+	.faq-toggle:last-child {
+		border-bottom: 1px solid #dddddd;
+	}
+	.faq-toggle .faq-toggle-title {
+		position: relative;
+		display: block;
+		border-top: 1px solid #dddddd;
+		margin-bottom: 6px;
+	}
+	.faq-toggle .faq-toggle-title h3 {
+		font-size: 20px;
+		margin: 0px;
+		line-height: 1;
+		cursor: pointer;
+		font-weight: 200;
+	}
+	.faq-toggle .faq-toggle-inner {
+		padding: 7px 25px 10px 25px;
+		display: none;
+		margin: -7px 0 6px;
+	}
+	.faq-toggle .faq-toggle-inner div {
+		max-width: 100%;
+	}
+	.faq-toggle .faq-toggle-title .title-name {
+		display: block;
+		background: #fff;
+		position: relative;
+		font-size: 18px;
+		padding: 25px 25px 14px;
+	}
+	.faq-toggle .faq-toggle-title a i {
+		font-size: 22px;
+		margin-right: 5px;
+	}
+	.faq-toggle .faq-toggle-title i {
+		position: absolute;
+		background: url("http://arielbeninca.com/Storage/plus_minus.png") 0px -24px no-repeat;
+		width: 24px;
+		height: 24px;
+		-webkit-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+		margin: 20px;
+		right: 0;
+	}
+	.faq-toggle .faq-toggle-title.active i {
+		background: url("http://arielbeninca.com/Storage/plus_minus.png") 0px 0px no-repeat;
+	}
+
+</style>
+{% endblock ext_styles %}
+
+{% block content %}
+
+<section>
+	<div class="hero-unit">
+		<div class="vertical-container">
+			<h1 class="hero-unit-primary-text">FAQ's</h1> 
+		</div>
+	</div>
+</section>
+
+<section style="padding: 40px 0px">
+	<div class="container">
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i>+</i>
+					<span class="title-name">1.What is Hoppercamp?</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>Hoppercamp is an educational enterprise aimed at spreading knowledge about Computer Science. We offer a carefully designed, flexible curriculum that focuses on giving learners a clear understanding of fundamentals, as well as the skills required to make a real-world impact.
+				</p>
+			</div>
+		</div>
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">2. How is Hoppercamp different from other educational websites?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>Hoppercamp's curriculum has been designed keeping in mind the fast pace of today's world, and can be customized to fit any schedule. The lessons are organized into tracks, which consist of various courses, which in turn consist of various topics. Learners can pick the lessons that interest them, and work on them at their own pace. Hoppercamp also offers unique and innovative challenges, as well as an efficient reward system.
+				</p>
+			</div>
+		</div>
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">3. Who is eligible to enroll?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>Absolutely anyone! Whether you are a newcomer to the world of Computer Science, or an experienced programmer looking to brush up on some skills, Hoppercamp will provide you with everything you need.
+				</p>
+			</div>
+		</div>
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">4. What is a track?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>A track is a collection of courses that deal with different but related subjects. A course in turn is a collection of different topics studied under the same subject.</p>
+
+			</div>
+		</div>
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">5. What can I gain from participating in Hoppercamp?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>Knowledge, skill, expertise, as well as a reliable proof of your competence. There is much to gain by actively participating in the track(s) of your choice.
+				</p>
+			</div>
+		</div>
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">6. Can organizations enroll?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>
+				Yes. Institutions and organizations are free to enroll. Find out more on the Institutions page.
+				</p>
+			</div>
+		</div>
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">7. Can Hoppercamp help me get a job?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>Knowledge, skill, expertise, as well as a reliable proof of your competence. There is much to gain by actively participating in the track(s) of your choice.
+				</p>
+			</div>
+		</div>
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">8. How long will my track take?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>As tracks consist of a varied number of courses, it is difficult to estimate the exact time your track will take. However, you are free to learn on as many tracks as you like during your chosen period of subscription.
+				</p>
+			</div>
+		</div>
+
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">9. How is the Hoppercamp certification useful?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>
+				The Hoppercamp certification stands as a proof of your merit after having complete a certain track.
+				</p>
+			</div>
+		</div>
+
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">10. What can I do to earn more badges and points?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>Badges are earned by completing levels. Points are earned by solving challenges, and can be redeemed for various purposes.
+				</p>
+			</div>
+		</div>
+
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">11. How should I choose my track?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>What are you interested in? We recommend that you try that first. It would be useful to review the courses and topics offered on a particular topic before choosing it.
+				</p>
+			</div>
+		</div>
+
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">12. How can I contact a human?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>
+				To speak to a person for any queries, you can contact us at <a>contact@hoppercamp.com</a>
+
+				</p>
+			</div>
+		</div>
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">13. What do I need to know to start Hoppercamp?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>There is no minimum Computer Science knowledge, required to start participating in Hoppercamp. We have specially designed tracks for everyone - from beginners taking their first steps to experienced programmers. All you need is an interest in learning and the drive to work at it.
+				</p>
+			</div>
+		</div>
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">14. Do I need special software or hardware?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>As such there is no special software or hardware required to participate in Hoppercamp. If the track you choose teaches the operation of a particular software, you will be guided through acquiring and installing it.
+				</p>
+			</div>
+		</div>
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">15. Can I learn for free?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>Hoppercamp offers a selection of courses and topics for free that anyone is eligible to use. The entire track can be accessed through a paid subscription.
+				</p>
+			</div>
+		</div>
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">16. How is the curriculum designed?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>Hoppercamp's curriculum is designed by taking into consideration all the aspects of a particular subject a student needs to know to gain proficiency. It combines theoretical fundamentals with practical techniques.
+				</p>
+			</div>
+		</div>
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">17. How much time do I need to devote to Hoppercamp everyday?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>Our tracks are flexible and self-paced. Your daily hours can be adjusted according to your schedule.
+				</p>
+			</div>
+		</div>
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">18. What is the aim of Hoppercamp?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>The aim of Hoppercamp is to provide personalized learning of the highest caliber, in a way that is easy to understand and follow.
+				</p>
+			</div>
+		</div>
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">19. How can I work at Hoppercamp?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>We are always on the lookout for driven and committed people to work with us. Find out more on our Jobs page.
+				</p>
+			</div>
+		</div>
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">20. What is the right way to make the best out of Hoppercamp?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>It is important to choose the right track for your needs. Once this has been done, learners are advised to follow the topics systematically, testing themselves through our challenges at regular intervals.
+				</p>
+			</div>
+		</div>
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">21. How will my progress be measured?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>Learners' progress through a track will be measured by the number of topics they have successfully completed. Badges awarded at the end of every level also serve as a measure of progress.
+				</p>
+			</div>
+		</div>
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">22. How will I be tested?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>Challenges have been specially designed to allow learners to test what they have learnt at regular intervals.
+				</p>
+			</div>
+		</div>
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">23. Do I have to pay to get certified?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>The verified certification can be acquired at Rs. 2000/-.
+				</p>
+			</div>
+		</div>
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">24. Can I interact with other students on my track?
+
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>Absolutely. Interaction with the larger community is an important part of Hoppercamp.
+				</p>
+			</div>
+		</div>
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">25. Can I pause my track if required?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>As Hoppercamp tracks are self-paced, you can pause your track when required. It can be completed with no additional cost anytime within the subscription period.
+				</p>
+			</div>
+		</div>
+
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">26. How is my privacy ensured?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>Hoppercamp is committed to protecting the privacy of users. Personal details are not shared with any other parties. Please read our Privacy Policy to know more.
+				</p>
+			</div>
+		</div>
+
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">27. What is the format for each track?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>A track is a collection of courses that deal with different but related subjects. A course in turn is a collection of different topics studied under the same subject.
+				</p>
+			</div>
+		</div>
+
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">28. Can I access the track material after finishing my track?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>Yes. The material will always be available to you once you begin a track.
+				</p>
+			</div>
+		</div>
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">29. How difficult are the challenges?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>Challenges are organized into difficulty levels, ranging from simple problems to test learners' understanding of the fundamentals, to complex ones for experts to ponder.
+				</p>
+			</div>
+		</div>
+
+		<div class="faq-toggle">
+			<div class="faq-toggle-title ">
+				<h3>
+					<i></i>
+					<span class="title-name">30. Where can I apply what I learn?
+					</span>
+				</h3>
+			</div>
+
+			<div class="faq-toggle-inner">
+				<p>Hoppercamp imparts knowledge that is useful both in the study of Computer Science and in building real-world technologies.
+				</p>
+			</div>
+		</div>
+	</div><!--container-->
+</section>
+{% endblock content %}
+
+{% block footer %}
+{% include 'footer.html' %}
+{% endblock footer %}
+
+
+{% block ext_scripts %}
+
+<script type="text/javascript">
+	if( jQuery(".faq-toggle .faq-toggle-title").hasClass('active') ){
+		jQuery(".faq-toggle .faq-toggle-title.active").closest('.faq-toggle').find('.faq-toggle-inner').show();
+	}
+	jQuery(".faq-toggle .faq-toggle-title").click(function(){
+		if( jQuery(this).hasClass('active') ){
+			jQuery(this).removeClass("active").closest('.faq-toggle').find('.faq-toggle-inner').slideUp(200);
+		}
+		else{	jQuery(this).addClass("active").closest('.faq-toggle').find('.faq-toggle-inner').slideDown(200);
+	}
+});
+</script>
+
+{% endblock ext_scripts %}
