@@ -32,6 +32,8 @@ C:\Users\rajuc\Desktop\html-files> git init
 >git commit -m "removed java file"
 
 
+git clone 
+
 
 
 
